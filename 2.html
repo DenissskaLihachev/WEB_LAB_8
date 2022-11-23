@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<style>
+    .Task1
+    {
+        width: 100%;
+        height: 150px;
+        background-color:aqua;
+        border-radius: 10px;
+        text-align: center;
+        padding-top: 20px;
+    } 
+</style>
+<body>
+    <div id="Text" class="Task1"></div>
+<script>
+    class Person
+    {
+        name
+        age
+        height
+
+        constructor(name, age, height)
+        {
+            this.name = name
+            this.age = age
+            this.height = height
+        }
+
+        static getFieldStr(person)
+        {
+            let str = ""
+            str += "<p>" + arr.name + "</p>" + "<p>" + arr.age + "</p>" + "<p>" + arr.height + "</p>"
+            return str
+        }
+        static getDataStr(arr)
+        {
+            let str = getFieldStr(arr)
+            return ("<div>" + str + "</div>")
+        }
+    }
+    let person = new Person("Denis", 18, 180);
+    document.getElementById("Text").innerHTML = person.getFieldStr(person);
+</script>
+</body>
+</html>
